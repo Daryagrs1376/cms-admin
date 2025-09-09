@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual envs (Poetry/venv)
+.venv/
+.env
+venv/
+
+# SQLite databases
+*.sqlite3
+db.sqlite3
+
+# Django stuff
+/media/
+staticfiles/
+*.log
+
+# VSCode / PyCharm configs
+.idea/
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
