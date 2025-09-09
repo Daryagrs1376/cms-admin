@@ -6,7 +6,7 @@ from projects.models import Project
 class ContentType(models.Model):
     project = models.ForeignKey(Project, on_delete=models.CASCADE)  
     name = models.CharField(max_length=200)  
-    schema = models.JSONField(help_text="ساختار JSON محتوا") 
+    schema = models.JSONField(help_text="ساختار به فرمت jsonبده محتوا") 
     created_at = models.DateTimeField(auto_now_add=True) 
 
     def __str__(self):
