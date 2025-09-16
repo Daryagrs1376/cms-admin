@@ -3,8 +3,8 @@ from .views import ContentTypeViewSet, EntryViewSet
 
 
 router = DefaultRouter()
-router.register('content-types', ContentTypeViewSet)
-router.register('entries', EntryViewSet)
+router.register('content-types', ContentTypeViewSet, basename='ContentType')
+router.register('entries', EntryViewSet, basename='Entry')
 
 
 urlpatterns = router.urls

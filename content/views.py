@@ -6,7 +6,6 @@ from rest_framework.permissions import DjangoModelPermissions
 
 
 
-
 class ContentTypeViewSet (viewsets.ModelViewSet):
     queryset = ContentType.objects.all()
     serializer_class = ContentTypeSerializer
