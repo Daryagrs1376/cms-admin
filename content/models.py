@@ -11,7 +11,8 @@ class ContentType(models.Model):
     def __str__(self):
         return self.name 
 
-
+#این فیلدschemaبرای اینه که هرپروژه مدلهاشو بتونه بصورت schema تعریف کنه 
+#یعنی داده های واقعی داشته باشه
 
 class Entry(models.Model):
     content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE) 
